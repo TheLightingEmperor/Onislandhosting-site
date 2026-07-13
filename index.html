@@ -70,7 +70,19 @@
       object-fit: contain;
       display: block;
     }
-    .header-right { display: flex; align-items: center; gap: 1.5rem; }
+    .header-right { display: flex; align-items: center; gap: 2rem; }
+    .header-nav { display: flex; align-items: center; gap: 2rem; }
+    .header-nav a {
+      font-family: var(--font-nunito);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--deep-olive);
+      text-decoration: none;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+    .header-nav a:hover { color: var(--olive); }
     .nav-cta {
       font-family: var(--font-nunito);
       font-size: 0.78rem;
@@ -83,6 +95,7 @@
       border-radius: 100px;
       text-decoration: none;
       transition: background 0.2s;
+      white-space: nowrap;
     }
     .nav-cta:hover { background: var(--olive); }
     .mobile-toggle {
