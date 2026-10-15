@@ -717,7 +717,7 @@
     .about-image-col img {
       width: 100%;
       border-radius: 1.5rem;
-      aspect-ratio: 3/4;
+      aspect-ratio: 1/1;
       object-fit: cover;
       box-shadow: 0 20px 60px rgba(28,36,32,0.13);
       display: block;
@@ -807,14 +807,14 @@
     @media (max-width: 900px) {
       .about-inner { flex-direction: column; gap: 2.5rem; }
       .about-image-col { width: 100%; position: static; }
-      .about-image-col img { aspect-ratio: 4/3; }
+      .about-image-col img { aspect-ratio: 1/1; }
     }
     /* ── MOBILE-ONLY fixes (phone) ── */
     @media (max-width: 560px) {
-      /* Linda's photo: show as portrait so face isn't cropped */
+      /* Linda's photo: square, shown in full */
       .about-image-col img {
-        aspect-ratio: 3/4;
-        object-position: top center;
+        aspect-ratio: 1/1;
+        object-position: center;
       }
       /* Hero cards: 2 top + 2 bottom corner cards, no labels */
       .fc-2 {
@@ -1405,7 +1405,7 @@
     <div class="about-inner">
       <div class="about-image-col reveal">
         <img
-          src="photos/Linda Blue dress.jpg"
+          src="photos/Linda Square.jpg"
           alt="Linda Montoya — Airbnb Superhost"
         />
       </div>
