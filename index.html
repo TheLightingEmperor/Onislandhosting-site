@@ -693,6 +693,20 @@
       max-width: 700px;
       margin: 0 auto;
     }
+    .co-body + .co-body { margin-top: 1.2rem; }
+    .co-signoff {
+      font-family: var(--font-nunito);
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.8);
+      margin-top: 2.2rem;
+      line-height: 1.6;
+    }
+    .co-signoff span {
+      font-family: var(--font-cormorant);
+      font-style: italic;
+      font-size: 1.9rem;
+      color: #fff;
+    }
 
     /* ═══════════════════════════════
        ABOUT
@@ -979,6 +993,68 @@
       max-width: 480px;
       line-height: 1.72;
     }
+    .case-lock {
+      background: var(--warm-beige);
+      border-radius: 1.5rem;
+      padding: 3.5rem 2rem;
+      text-align: center;
+      max-width: 620px;
+      margin: 0 auto;
+    }
+    .case-lock-icon { color: var(--sage); margin-bottom: 1rem; }
+    .case-lock h3 {
+      font-family: var(--font-cormorant);
+      font-size: 1.9rem;
+      font-weight: 400;
+      color: var(--deep-olive);
+      margin-bottom: 0.6rem;
+    }
+    .case-lock p {
+      font-family: var(--font-nunito);
+      font-size: 0.93rem;
+      color: rgba(62,74,63,0.65);
+      line-height: 1.7;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .case-lock-form {
+      display: flex;
+      gap: 0.6rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 1.8rem auto 0.4rem;
+    }
+    .case-lock-form input {
+      font-family: var(--font-nunito);
+      font-size: 0.95rem;
+      padding: 0.8rem 1.1rem;
+      border: 1px solid rgba(62,74,63,0.2);
+      border-radius: 999px;
+      background: var(--soft-white);
+      color: var(--deep-olive);
+      min-width: 0;
+      flex: 1 1 200px;
+      max-width: 260px;
+      outline: none;
+    }
+    .case-lock-form input:focus { border-color: var(--sage); }
+    .case-lock-form button {
+      font-family: var(--font-nunito);
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 999px;
+      background: var(--olive);
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .case-lock-form button:hover { background: var(--deep-olive); }
+    .case-lock-form button:disabled { opacity: 0.6; cursor: wait; }
+    .case-lock .case-lock-error { color: #a4553f; min-height: 1.4em; font-size: 0.85rem; }
+    .case-lock .case-lock-help { font-size: 0.82rem; margin-top: 0.4rem; }
+    .case-lock-help a { color: var(--sage); }
     .case-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -1385,9 +1461,9 @@
       </div>
       <div class="feature-split-text reveal">
         <span class="section-label">The On Island Hosting Difference</span>
-        <h2>A More Thoughtful Approach to <em>Vacation Rental Management</em></h2>
+        <h2>A More Thoughtful Approach to <em>Vacation Rental Co-Hosting</em></h2>
         <hr class="section-rule">
-        <p>At On Island Hosting, we intentionally partner with a select number of homeowners to provide a truly personalized experience. Your home deserves more than management—it deserves a dedicated partner committed to exceptional care, elevated guest experiences, and long-term success.</p>
+        <p>At On Island Hosting, we intentionally partner with a select number of homeowners to provide a truly personalized experience. Your home deserves more—it deserves a dedicated caretaker.</p>
       </div>
     </div>
   </section>
@@ -1440,7 +1516,7 @@
           </li>
         </ul>
         <div class="about-bio">
-          <p>My path to vacation rental management is rooted in experience that drives results. With 20 years in digital advertising, I know how to position properties, attract the right guests, and maximize bookings.</p>
+          <p>My path to vacation rental co-hosting is rooted in experience that drives results. With 20 years in digital advertising, I know how to position properties, attract the right guests, and maximize bookings.</p>
           <p>I later became a health coach, which shaped my approach to creating spaces that feel calm, welcoming, and memorable—earning consistent five-star reviews.</p>
           <p>Today, I bring that combined expertise to the Kona luxury rental market. I've worked with Fortune 500 brands like Paramount Pictures, Target, and Toyota, and I apply that same level of strategy, professionalism, and attention to detail to every home I manage.</p>
           <p>As a Kona resident, HOA board member, and Airbnb Superhost, I understand both the market and the community. I offer a hands-on, boutique approach that delivers strong revenue, exceptional guest experiences, and peace of mind for homeowners.</p>
@@ -1460,10 +1536,12 @@
   <img class="co-bg" src="co-hosting-hero.jpg" alt="Kona Coastal View" />
   <div class="co-overlay"></div>
   <div class="co-content">
-    <span class="co-label">An Important Difference</span>
-    <h2 class="co-title">Co-Hosting vs. Traditional<br>Property Management</h2>
+    <h2 class="co-title">A More Personal Approach to<br>Vacation Rental Hosting</h2>
     <div class="co-divider"></div>
-    <p class="co-body">While traditional property management focuses on managing many properties at once, boutique co-hosting is intentionally smaller—allowing for thoughtful oversight and attention to detail for each home. With Co-Hosting, you own the listing, reviews, and the reputation you build on Airbnb and VRBO.</p>
+    <p class="co-body">At On Island Hosting, we believe exceptional guest experiences begin with personalized attention and thoughtful care for every home.</p>
+    <p class="co-body">Our boutique co-hosting approach keeps you at the center of your vacation rental business. You retain ownership of your listings, guest reviews, and online reputation on Airbnb, while we provide dedicated on-island support to help keep your property beautifully maintained, guest-ready, and welcoming.</p>
+    <p class="co-body">It's a collaborative partnership built on transparency, attention to detail, and pride of ownership.</p>
+    <p class="co-signoff">Warm Aloha,<br><span>Linda</span></p>
   </div>
 </section>
 
@@ -1550,29 +1628,19 @@
       <h2 class="case-title">Case Studies</h2>
       <p class="case-sub">A closer look at what boutique, on-island co-hosting actually delivers — property by property.</p>
     </div>
-    <div class="case-grid">
-      <div class="case-card reveal">
-        <div class="case-img-wrap">
-          <img src="case-studies/oasis-kona.png" alt="Oasis Kona" />
-          <div class="case-img-overlay"></div>
-        </div>
-        <div class="case-body">
-          <h3>Oasis Kona</h3>
-          <p class="case-subtitle">A Boutique Property Transformed</p>
-          <p>A standout Kona property given new life through attentive co-hosting, optimized pricing, and a guest-first approach — resulting in stronger bookings and a consistently five-star experience. <a href="case-studies/oasis-kona.pdf" target="_blank" rel="noopener noreferrer" class="case-learn-more">Learn More &rarr;</a></p>
-        </div>
-      </div>
-      <div class="case-card reveal">
-        <div class="case-img-wrap">
-          <img src="case-studies/royal-kona.png" alt="Royal Kona" />
-          <div class="case-img-overlay"></div>
-        </div>
-        <div class="case-body">
-          <h3>Royal Kona</h3>
-          <p class="case-subtitle">From Underperforming to Outstanding</p>
-          <p>A beautiful 3-bedroom pool home in Kona was underperforming under a large management company. After switching to On Island Hosting, every metric improved simultaneously — more bookings, higher rates, longer stays, and better occupancy. <a href="case-studies/royal-kona-case-study_v11%20(4).pdf" target="_blank" rel="noopener noreferrer" class="case-learn-more">Learn More &rarr;</a></p>
-        </div>
-      </div>
+    <div class="case-lock reveal" id="case-lock">
+      <svg class="case-lock-icon" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path stroke-linecap="round" d="M8 11V7a4 4 0 018 0v4"/></svg>
+      <h3>Private Case Studies</h3>
+      <p>These property results are shared privately with homeowners. Enter the password to view them.</p>
+      <form class="case-lock-form" id="case-lock-form" onsubmit="unlockCaseStudies(event)">
+        <input type="password" id="case-lock-input" placeholder="Password" aria-label="Case studies password" autocomplete="off" required />
+        <button type="submit">View Case Studies</button>
+      </form>
+      <p class="case-lock-error" id="case-lock-error" aria-live="polite"></p>
+      <p class="case-lock-help">Don't have the password? <a href="#contact">Get in touch</a>.</p>
+    </div>
+    <div id="case-unlocked" hidden></div>
+    <script type="application/json" id="case-vault">{"i":250000,"s":"IaqMLe2+DulAte4AIbTMkg==","v":"02G4/51RWv2QYOPO","c":"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"}</script>
     </div>
   </div>
 </section>
@@ -1863,6 +1931,45 @@
     btn.textContent = 'Send Inquiry';
     btn.disabled = false;
   }
+
+  // ── Case studies: password gate (content is AES-GCM encrypted in #case-vault)
+  const CASE_KEY = 'oih-case-pass';
+  async function decryptCaseStudies(pass) {
+    const vault = JSON.parse(document.getElementById('case-vault').textContent);
+    const b = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+    const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(pass), 'PBKDF2', false, ['deriveKey']);
+    const key = await crypto.subtle.deriveKey(
+      { name: 'PBKDF2', salt: b(vault.s), iterations: vault.i, hash: 'SHA-256' },
+      base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+    const html = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: b(vault.v) }, key, b(vault.c));
+    const out = document.getElementById('case-unlocked');
+    out.innerHTML = new TextDecoder().decode(html);
+    out.hidden = false;
+    document.getElementById('case-lock').style.display = 'none';
+  }
+
+  async function unlockCaseStudies(e) {
+    e.preventDefault();
+    const input = document.getElementById('case-lock-input');
+    const err = document.getElementById('case-lock-error');
+    const btn = e.target.querySelector('button');
+    btn.disabled = true;
+    err.textContent = '';
+    try {
+      await decryptCaseStudies(input.value);
+      try { sessionStorage.setItem(CASE_KEY, input.value); } catch {}
+    } catch {
+      err.textContent = 'Incorrect password — please try again.';
+      input.select();
+    }
+    btn.disabled = false;
+  }
+
+  (function restoreCaseStudies() {
+    let saved = null;
+    try { saved = sessionStorage.getItem(CASE_KEY); } catch {}
+    if (saved) decryptCaseStudies(saved).catch(() => {});
+  })();
 </script>
 
 </body>
