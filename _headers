@@ -1,0 +1,11 @@
+# Case-study files are shared privately; keep them out of search results.
+/case-studies/*
+  X-Robots-Tag: noindex, nofollow
+
+# Images and video rarely change, so browsers can keep them for a week.
+/photos/*
+  Cache-Control: public, max-age=604800
+/co-hosting-hero.jpg
+  Cache-Control: public, max-age=604800
+/hero-video.mp4
+  Cache-Control: public, max-age=604800
