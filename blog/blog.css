@@ -144,7 +144,7 @@ body {
   padding: 1.25rem 1.5rem; border-radius: 0 0.9rem 0.9rem 0;
 }
 .prose .callout p:last-child { margin-bottom: 0; }
-.prose figure { margin: 2.5rem 0; }
+.prose figure { margin: 2.75rem auto; max-width: 560px; }
 .prose figure img {
   width: 100%; height: auto; display: block; border-radius: 1.25rem;
   background: var(--warm-beige);

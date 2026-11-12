@@ -1256,6 +1256,55 @@
     .case-learn-more:hover { color: var(--deep-olive); border-color: var(--deep-olive); }
 
     /* ═══════════════════════════════
+       BLOG
+    ═══════════════════════════════ */
+    #blog {
+      background: var(--soft-white);
+      border-top: 1px solid rgba(107,125,107,0.12);
+      padding: 6rem 2rem 6.5rem;
+    }
+    .blog-inner { max-width: 1100px; margin: 0 auto; }
+    .blog-head {
+      display: flex; align-items: flex-end; justify-content: space-between;
+      gap: 1.5rem; flex-wrap: wrap; margin-bottom: 3rem;
+    }
+    .blog-feature {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      background: var(--warm-beige);
+      border-radius: 1.5rem;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .blog-feature:hover { transform: translateY(-5px); box-shadow: 0 18px 50px rgba(62,74,63,0.1); }
+    .blog-feature-img { overflow: hidden; min-height: 280px; }
+    .blog-feature-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
+    .blog-feature:hover .blog-feature-img img { transform: scale(1.04); }
+    .blog-feature-body { padding: 2.5rem 2.5rem 2.5rem; display: flex; flex-direction: column; justify-content: center; }
+    .blog-feature-meta {
+      font-family: var(--font-nunito);
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--olive); margin-bottom: 0.8rem;
+    }
+    .blog-feature-body h3 {
+      font-family: var(--font-cormorant);
+      font-size: clamp(1.6rem, 2.6vw, 2.1rem); font-weight: 600; line-height: 1.2;
+      color: var(--deep-olive); margin-bottom: 0.9rem;
+    }
+    .blog-feature-body p {
+      font-family: var(--font-nunito);
+      font-size: 0.92rem; line-height: 1.77; color: rgba(62,74,63,0.66); margin-bottom: 1.5rem;
+    }
+    .blog-feature-body .case-learn-more { align-self: flex-start; }
+    @media (max-width: 860px) {
+      .blog-feature { grid-template-columns: 1fr; }
+      .blog-feature-img { min-height: 0; aspect-ratio: 1200 / 630; }
+      .blog-feature-body { padding: 1.75rem 1.75rem 2rem; }
+    }
+
+    /* ═══════════════════════════════
        CONTACT
     ═══════════════════════════════ */
     #contact {
@@ -1458,6 +1507,7 @@
         <a href="#co-hosting">Why Co-Hosting</a>
         <a href="#testimonials">Reviews</a>
         <a href="#case-studies">Case Studies</a>
+        <a href="/blog/">Blog</a>
       </nav>
       <a href="#contact" class="nav-cta">Book A Consultation</a>
       <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
@@ -1472,6 +1522,7 @@
     <a href="#co-hosting" onclick="closeMobileMenu()">Why Co-Hosting</a>
     <a href="#testimonials" onclick="closeMobileMenu()">Reviews</a>
     <a href="#case-studies" onclick="closeMobileMenu()">Case Studies</a>
+    <a href="/blog/" onclick="closeMobileMenu()">Blog</a>
     <a href="#contact" onclick="closeMobileMenu()" class="mobile-cta">Book A Consultation</a>
   </div>
 </header>
@@ -1777,6 +1828,35 @@
 
 
 <!-- ═══════════════════════════════════════
+     BLOG
+═══════════════════════════════════════ -->
+<section id="blog">
+  <div class="blog-inner">
+    <div class="blog-head reveal">
+      <div>
+        <span class="section-label">From Linda</span>
+        <h2 class="case-title">The Blog</h2>
+        <p class="case-sub">Practical notes for Kona vacation home owners on co-hosting, guests and pricing.</p>
+      </div>
+      <a href="/blog/" class="case-learn-more">View all posts</a>
+    </div>
+    <a class="blog-feature reveal" href="/blog/airbnb-co-host-vs-property-manager-kona/">
+      <div class="blog-feature-img">
+        <img src="/blog/images/og-co-host-vs-property-manager.jpg" width="1200" height="630" loading="lazy"
+             alt="Linda Montoya on the lanai of a Kona vacation home" />
+      </div>
+      <div class="blog-feature-body">
+        <div class="blog-feature-meta"><time datetime="2026-11-12">Nov 12, 2026</time> &middot; 6 min read</div>
+        <h3>Airbnb Co-Host vs. Property Manager: What's the Difference?</h3>
+        <p>Who owns your listing, where your rental income goes, and how your home is cared for: the key differences for Kona vacation rental owners.</p>
+        <span class="case-learn-more">Read the article</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
      CONTACT
 ═══════════════════════════════════════ -->
 <section id="contact">
@@ -1865,6 +1945,7 @@
           <li><a href="#co-hosting">Why Co-Hosting</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#case-studies">Case Studies</a></li>
+          <li><a href="/blog/">Blog</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
