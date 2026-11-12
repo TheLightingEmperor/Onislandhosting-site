@@ -149,7 +149,7 @@ body {
   width: 100%; height: auto; display: block; border-radius: 1.25rem;
   background: var(--warm-beige);
 }
-.prose figure.narrow { max-width: 520px; margin-left: auto; margin-right: auto; }
+.prose figure.narrow { max-width: 520px; }
 
 .article-cta {
   margin-top: 3.5rem; background: var(--deep-olive); color: var(--soft-white);
