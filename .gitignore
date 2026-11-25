@@ -2,3 +2,4 @@
 *.zip
 node_modules/
 before_after_fuji.jpg
+.claude/
