@@ -48,27 +48,27 @@
         {
           "@type": "Question",
           "name": "Do I keep my Airbnb listing?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Linda is added as a co-host on your existing Airbnb listing. Your account, guest reviews, Superhost history and payouts all stay in your name." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. I'm added as a co-host on your existing Airbnb listing. Your account, guest reviews, Superhost history and payouts all stay in your name." }
         },
         {
           "@type": "Question",
           "name": "How is a co-host different from Kona vacation rental management?",
-          "acceptedAnswer": { "@type": "Answer", "text": "A traditional management company often lists your home under its own account and collects the rental income before paying you. As your co-host, Linda works inside your listing instead. Airbnb pays you directly, shares the agreed co-host fee automatically, and you can see every booking and payout in real time." }
+          "acceptedAnswer": { "@type": "Answer", "text": "If you've been searching for Kona vacation rental management, it helps to know the difference. A traditional management company often lists your home under its own account and collects the rental income before paying you. As your Airbnb co-host in Kona, I work inside your listing instead. Airbnb pays you directly, shares my agreed co-host fee automatically, and you can see every booking and payout in real time." }
         },
         {
           "@type": "Question",
           "name": "What does Airbnb co-hosting in Kona cost?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Linda's co-host fee is agreed with you upfront and paid automatically through Airbnb from each booking, so there are no separate invoices. On your complimentary call she will walk you through the details and what your home could earn." }
+          "acceptedAnswer": { "@type": "Answer", "text": "My co-host fee is agreed with you upfront and paid automatically through Airbnb from each booking, so there are no separate invoices. On your complimentary call I'll walk you through the details and what your home could earn." }
         },
         {
           "@type": "Question",
           "name": "I live on the mainland. Is that a problem?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Not at all. Off-island owners are exactly who On Island Hosting is built for. Linda becomes your eyes and hands in Kona, from guest arrivals to vendor visits, and keeps you updated so you never have to wonder how your home is doing." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Not at all. Off-island owners are exactly who I built On Island Hosting for. I become your eyes and hands in Kona, from guest arrivals to vendor visits, and keep you updated so you never have to wonder how your home is doing." }
         },
         {
           "@type": "Question",
           "name": "Do you work with long-term rentals?",
-          "acceptedAnswer": { "@type": "Answer", "text": "No. On Island Hosting focuses only on short-term and vacation rentals, which lets Linda give each home and every guest her full attention." }
+          "acceptedAnswer": { "@type": "Answer", "text": "No. I co-host short-term and vacation rentals only, which lets me give each home and every guest my full attention." }
         }
       ]
     }
@@ -142,6 +142,9 @@
     }
 
     /* ── Shared ── */
+    /* Target search phrases are bolded where they appear in the copy */
+    p strong.kw, summary strong.kw { font-weight: 700; color: var(--deep-olive); }
+    #how p strong.kw { color: #fff; }
     .section-label {
       font-size: 0.68rem; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase;
       color: var(--olive); display: block; margin-bottom: 1.2rem;
@@ -174,7 +177,7 @@
     #hero { padding: 7.5rem 2rem 5rem; background: var(--soft-white); }
     .hero-inner {
       max-width: 1200px; margin: 0 auto;
-      display: grid; grid-template-columns: 1.35fr 0.65fr; gap: 4rem; align-items: center;
+      display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: center;
     }
     .hero-eyebrow {
       font-size: 0.68rem; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase;
@@ -202,26 +205,18 @@
       color: var(--deep-olive);
     }
     .hero-trust svg { color: var(--sage); flex-shrink: 0; }
-    .hero-photo { position: relative; }
-    .hero-photo img {
-      width: 100%; height: min(66vh, 580px); min-height: 420px; object-fit: cover; object-position: 70% center; display: block;
-      border-radius: 1.5rem; box-shadow: 0 24px 64px rgba(28,36,32,0.16);
-    }
-    .hero-photo-tag {
-      position: absolute; left: -1.5rem; bottom: 2rem;
-      background: var(--soft-white); border-radius: 1rem; padding: 1rem 1.3rem;
-      box-shadow: 0 12px 36px rgba(28,36,32,0.14);
-    }
-    .hero-photo-tag strong { display: block; font-family: var(--font-cormorant); font-size: 1.35rem; font-weight: 600; line-height: 1.1; }
-    .hero-photo-tag span { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--olive); }
+    .hero-form { scroll-margin-top: 90px; }
+    .hero-form .form-wrap { box-shadow: 0 24px 64px rgba(28,36,32,0.14); }
+    .form-head { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.6rem; }
+    .form-head img { width: 58px; height: 58px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    .form-wrap .form-head h3 { margin-bottom: 0.2rem; }
+    .form-head p { font-size: 0.86rem; line-height: 1.55; color: rgba(62,74,63,0.62); }
     @media (max-width: 900px) {
       #hero { padding: 6.5rem 1.25rem 4rem; }
       .hero-inner { grid-template-columns: 1fr; gap: 2.75rem; }
-      .hero-photo { max-width: 460px; width: 100%; margin: 0 auto; }
-      .hero-photo img { height: auto; min-height: 0; aspect-ratio: 4 / 5; }
-      .hero-photo-tag { left: 1rem; bottom: 1rem; }
+      .hero-form { max-width: 560px; width: 100%; margin: 0 auto; }
     }
-    @media (max-width: 520px) { .eyebrow-extra { display: none; } }
+    @media (max-width: 520px) { .eyebrow-extra, .hero-note { display: none; } .hero-lead { margin-bottom: 0; } .hero-trust { margin-top: 1.6rem; } }
 
     /* ── Why ── */
     #why { background: var(--warm-beige); padding: 6rem 2rem 6.5rem; }
@@ -235,6 +230,17 @@
     .why-card h3 { font-family: var(--font-cormorant); font-size: 1.5rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.7rem; }
     .why-card p { font-size: 0.9rem; line-height: 1.8; color: rgba(62,74,63,0.66); }
     @media (max-width: 900px) { #why { padding: 4.5rem 1.25rem 5rem; } .why-grid { grid-template-columns: 1fr; } .why-card { padding: 2rem 1.6rem; } }
+
+    /* ── Meet Linda ── */
+    #meet { background: var(--soft-white); padding: 6rem 2rem; }
+    .meet-inner { max-width: 1150px; margin: 0 auto; display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 4.5rem; align-items: center; }
+    .meet-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 1.5rem; box-shadow: 0 20px 60px rgba(28,36,32,0.13); }
+    .meet-text h2 { font-family: var(--font-cormorant); font-size: clamp(2rem, 3.6vw, 3rem); font-weight: 400; line-height: 1.18; }
+    .meet-text h2 em { font-style: italic; font-weight: 300; }
+    .meet-text p { font-size: 0.98rem; line-height: 1.85; color: rgba(62,74,63,0.72); margin-bottom: 1rem; }
+    .signoff { margin-top: 1.6rem; font-size: 0.95rem; color: rgba(62,74,63,0.72); line-height: 1.5; }
+    .signoff span { font-family: var(--font-cormorant); font-style: italic; font-size: 1.9rem; color: var(--deep-olive); }
+    @media (max-width: 860px) { #meet { padding: 4.5rem 1.25rem; } .meet-inner { grid-template-columns: 1fr; gap: 2.5rem; } .meet-photo { max-width: 440px; margin: 0 auto; width: 100%; } }
 
     /* ── Photo strip ── */
     .img-strip { display: grid; grid-template-columns: repeat(3, 1fr); }
@@ -361,7 +367,7 @@
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.49a1 1 0 01-.5 1.21l-2.26 1.13a11.04 11.04 0 005.52 5.52l1.13-2.26a1 1 0 011.21-.5l4.49 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.72 21 3 14.28 3 6V5z"/></svg>
         <span class="js-phone-text"></span>
       </a>
-      <a href="#book" class="nav-cta js-book" data-track="book_click">Book a Free Call</a>
+      <a href="#start" class="nav-cta js-book" data-track="book_click">Book a Free Call</a>
     </div>
   </div>
 </header>
@@ -374,23 +380,64 @@
     <div class="hero-text">
       <span class="hero-eyebrow">Kailua-Kona, Hawai'i<span class="eyebrow-extra"> &nbsp;·&nbsp; Airbnb Co-Hosting</span></span>
       <h1 class="hero-title">Kona Airbnb <span style="white-space:nowrap">Co-Hosting</span> <em>for Luxury Vacation Homes</em></h1>
-      <p class="hero-lead">Airbnb Superhost Linda Montoya partners with a select number of Kona homeowners to take care of everything hosting asks of you: pricing, guests, turnovers and on-island care. Your listing, reviews and payouts stay in your name. Your home gets a dedicated caretaker.</p>
-      <div class="hero-actions">
-        <a href="#book" class="btn js-book" data-track="book_click">Book a Free 20-Minute Call</a>
-        <span class="hero-note">No obligation, just an honest look at your home.</span>
-      </div>
+      <p class="hero-lead">I'm Linda Montoya, an Airbnb Superhost who lives in Kona. As your <strong class="kw">Kona Airbnb co-host</strong>, I take care of everything hosting asks of you: pricing, guests, turnovers and on-island care. I work with a small, select number of homeowners, so your listing, reviews and payouts stay in your name and your home gets a dedicated caretaker.</p>
+      <p class="hero-note">No obligation, just an honest look at your home.</p>
       <div class="hero-trust">
         <span><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.5 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg>Airbnb Superhost</span>
-        <span><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Lives in Kona</span>
+        <span><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>I Live in Kona</span>
         <span><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg>Vacation Rentals Only</span>
       </div>
     </div>
-    <div class="hero-photo">
-      <img src="/blog/images/linda-co-host-kona-lanai.jpg" width="1122" height="1402" fetchpriority="high"
-           alt="Linda Montoya walking the lanai of a Kona vacation home beside the pool and tropical garden" />
-      <div class="hero-photo-tag">
-        <strong>Linda Montoya</strong>
-        <span>Your Kona Co-Host</span>
+
+    <div class="hero-form" id="start">
+      <div class="form-wrap">
+        <div class="form-success" hidden>
+          <div class="success-icon">
+            <svg width="24" height="24" fill="none" stroke="#6B7D6B" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <h3>Mahalo, I'll Be in Touch</h3>
+          <p>I'll reach out within 24 hours to set up your complimentary call.</p>
+        </div>
+        <form class="call-form" name="kona-call-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/kona-vacation-rental-management/?sent=1">
+          <div class="form-head">
+            <img src="/photos/Linda%20Square.jpg" alt="" width="58" height="58" />
+            <div>
+              <h3>Book a Free 20-Minute Call</h3>
+              <p>Tell me a little about your home and I'll reach out within 24 hours.</p>
+            </div>
+          </div>
+          <input type="hidden" name="form-name" value="kona-call-request" />
+          <input type="hidden" name="placement" value="hero" />
+          <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+          <div class="form-group">
+            <label for="h-name">Name</label>
+            <input type="text" id="h-name" name="name" autocomplete="name" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="h-email">Email</label>
+              <input type="email" id="h-email" name="email" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="h-phone">Phone</label>
+              <input type="tel" id="h-phone" name="phone" autocomplete="tel" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="h-area">Where is your home?</label>
+            <select id="h-area" name="propertyArea" required>
+              <option value="" disabled selected>Choose an area</option>
+              <option>Kailua-Kona</option>
+              <option>Keauhou</option>
+              <option>Holualoa</option>
+              <option>North Kona</option>
+              <option>South Kona</option>
+              <option>Elsewhere on the Big Island</option>
+            </select>
+          </div>
+          <button type="submit" class="btn form-submit">Book My Free Call</button>
+          <p class="form-fine">Your details come straight to me and are never shared.</p>
+        </form>
       </div>
     </div>
   </div>
@@ -406,17 +453,35 @@
     <div class="why-card reveal">
       <img src="/photos/Shell1.png" alt="" loading="lazy" />
       <h3>Truly On Island</h3>
-      <p>Linda lives in Kona. She checks your home before and after every stay, coordinates trusted local vendors, and catches the small things, like salt-air wear, a tired lanai cushion or a struggling AC, before a guest ever notices.</p>
+      <p>I live in Kona, so I check your home before and after every stay, coordinate trusted local vendors, and catch the small things, like salt-air wear, a tired lanai cushion or a struggling AC, before a guest ever notices. That's what a <strong class="kw">Kailua-Kona Airbnb co-host</strong> can do that a remote company can't.</p>
     </div>
     <div class="why-card reveal">
       <img src="/photos/Shell2.png" alt="" loading="lazy" />
       <h3>Your Listing Stays Yours</h3>
-      <p>Linda joins your existing Airbnb listing as co-host. Your account, five-star reviews, Superhost history and payouts remain in your name, and you can see every booking in real time.</p>
+      <p>I join your existing Airbnb listing as co-host. Your account, five-star reviews, Superhost history and payouts remain in your name, and you can see every booking in real time. That's the heart of <strong class="kw">Airbnb co-hosting in Kona</strong> the way I do it.</p>
     </div>
     <div class="why-card reveal">
       <img src="/photos/Shell3.png" alt="" loading="lazy" />
       <h3>Marketed Like a Brand</h3>
-      <p>Linda spent 20 years in digital advertising for brands like Paramount Pictures, Target and Toyota. She brings that same thinking to your listing: stronger photos and copy, dynamic pricing, and seasonal rates that balance occupancy with nightly revenue.</p>
+      <p>I spent 20 years in digital advertising for brands like Paramount Pictures, Target and Toyota. I bring that same thinking to your <strong class="kw">Kona vacation rental</strong>: stronger photos and copy, dynamic pricing, and seasonal rates that balance occupancy with nightly revenue.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MEET LINDA ═══ -->
+<section id="meet">
+  <div class="meet-inner">
+    <div class="meet-photo reveal">
+      <img src="/blog/images/linda-co-host-kona-lanai.jpg" width="1122" height="1402" loading="lazy"
+           alt="Linda Montoya walking the lanai of a Kona vacation home beside the pool and tropical garden" />
+    </div>
+    <div class="meet-text reveal">
+      <span class="section-label">Meet Your Co-Host</span>
+      <h2>Hi, I'm <em>Linda</em></h2>
+      <hr class="section-rule">
+      <p>I'm an Airbnb Superhost, a Kona resident and an HOA board member. I came to hosting after two decades in advertising and a few years as a health coach, and both shape how I work: I know how to make a listing stand out, and I know how to make a home feel calm, welcoming and memorable.</p>
+      <p>I keep my roster small on purpose. Every home I co-host gets my personal attention, and every guest is welcomed like a friend. For owners who want a <strong class="kw">vacation rental co-host</strong> they can actually reach, that makes all the difference.</p>
+      <p class="signoff">Warm Aloha,<br><span>Linda</span></p>
     </div>
   </div>
 </section>
@@ -443,7 +508,7 @@
       <div class="stat"><strong>100%</strong><span>Response Rate</span></div>
       <div class="stat"><strong>0%</strong><span>Cancellations</span></div>
     </div>
-    <p class="proof-foot reveal">From Linda's Airbnb Superhost profile.</p>
+    <p class="proof-foot reveal">From my Airbnb Superhost profile.</p>
   </div>
 </section>
 
@@ -457,17 +522,17 @@
     <div class="step reveal">
       <span class="step-num">01</span>
       <h3>A Conversation</h3>
-      <p>Book a complimentary 20-minute call. Tell Linda about your home, your goals and how involved you'd like to be.</p>
+      <p>Book a complimentary 20-minute call. Tell me about your home, your goals and how involved you'd like to be.</p>
     </div>
     <div class="step reveal">
       <span class="step-num">02</span>
       <h3>A Private Assessment</h3>
-      <p>Linda reviews your home and current listing, then gives you an honest picture of how it's positioned and what it could earn.</p>
+      <p>I review your home and current listing, then give you an honest picture of how it's positioned and what it could earn as a <strong class="kw">Kona short-term rental</strong>.</p>
     </div>
     <div class="step reveal">
       <span class="step-num">03</span>
       <h3>A Partnership</h3>
-      <p>If it feels right for you both, Linda joins your listing as co-host and takes it from there, keeping you in the loop every step of the way.</p>
+      <p>If it feels right for us both, I join your listing as co-host and take it from there, keeping you in the loop every step of the way.</p>
     </div>
   </div>
   <div class="how-cta reveal">
@@ -483,7 +548,7 @@
       <h2 class="book-headline">Is Your Kona Home <em>Earning What It Should?</em></h2>
       <hr class="section-rule">
       <p class="book-desc">Whether you're listing for the first time or your current setup isn't living up to expectations, a short conversation is the easiest place to start.</p>
-      <p class="book-desc">Share a few details and Linda will be in touch within 24 hours to find a time that suits you. Mainland time zones are always welcome.</p>
+      <p class="book-desc">Share a few details and I'll be in touch within 24 hours to find a time that suits you. Mainland time zones are always welcome.</p>
       <div class="book-person">
         <img src="/photos/Linda%20Square.jpg" alt="" loading="lazy" />
         <div>
@@ -491,39 +556,40 @@
           <span>Airbnb Superhost &middot; Kona Resident</span>
         </div>
       </div>
-      <p class="book-alt js-phone-line" hidden>Prefer to talk now? Call or text Linda at <a class="js-phone" href="#" data-track="call"><span class="js-phone-text"></span></a>.</p>
-      <p class="book-alt">Prefer email? Write to <a href="mailto:Linda@OnIslandHosting.com" data-track="email">Linda@OnIslandHosting.com</a>.</p>
+      <p class="book-alt js-phone-line" hidden>Prefer to talk now? Call or text me at <a class="js-phone" href="#" data-track="call"><span class="js-phone-text"></span></a>.</p>
+      <p class="book-alt">Prefer email? Write to me at <a href="mailto:Linda@OnIslandHosting.com" data-track="email">Linda@OnIslandHosting.com</a>.</p>
     </div>
 
     <div class="form-wrap reveal">
-      <div class="form-success" id="form-success" hidden>
+      <div class="form-success" hidden>
         <div class="success-icon">
           <svg width="24" height="24" fill="none" stroke="#6B7D6B" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M5 13l4 4L19 7"/></svg>
         </div>
-        <h3>Mahalo, We'll Be in Touch</h3>
-        <p>Linda will reach out within 24 hours to set up your complimentary call.</p>
+        <h3>Mahalo, I'll Be in Touch</h3>
+        <p>I'll reach out within 24 hours to set up your complimentary call.</p>
       </div>
-      <form id="call-form" name="kona-call-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/kona-vacation-rental-management/?sent=1">
+      <form class="call-form" name="kona-call-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/kona-vacation-rental-management/?sent=1">
         <h3>Request Your Free Call</h3>
         <input type="hidden" name="form-name" value="kona-call-request" />
+        <input type="hidden" name="placement" value="bottom" />
         <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
         <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" autocomplete="name" required />
+          <label for="b-name">Name</label>
+          <input type="text" id="b-name" name="name" autocomplete="name" required />
         </div>
         <div class="form-row">
           <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" autocomplete="email" required />
+            <label for="b-email">Email</label>
+            <input type="email" id="b-email" name="email" autocomplete="email" required />
           </div>
           <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel" />
+            <label for="b-phone">Phone</label>
+            <input type="tel" id="b-phone" name="phone" autocomplete="tel" />
           </div>
         </div>
         <div class="form-group">
-          <label for="area">Where is your home?</label>
-          <select id="area" name="propertyArea" required>
+          <label for="b-area">Where is your home?</label>
+          <select id="b-area" name="propertyArea" required>
             <option value="" disabled selected>Choose an area</option>
             <option>Kailua-Kona</option>
             <option>Keauhou</option>
@@ -533,8 +599,8 @@
             <option>Elsewhere on the Big Island</option>
           </select>
         </div>
-        <button type="submit" class="btn form-submit" id="form-submit-btn">Book My Free Call</button>
-        <p class="form-fine">Your details go only to Linda and are never shared.</p>
+        <button type="submit" class="btn form-submit">Book My Free Call</button>
+        <p class="form-fine">Your details come straight to me and are never shared.</p>
       </form>
     </div>
   </div>
@@ -549,23 +615,23 @@
   <div class="faq-list reveal">
     <details>
       <summary>Do I keep my Airbnb listing?</summary>
-      <p>Yes. Linda is added as a co-host on your existing Airbnb listing. Your account, guest reviews, Superhost history and payouts all stay in your name.</p>
+      <p>Yes. I'm added as a co-host on your existing Airbnb listing. Your account, guest reviews, Superhost history and payouts all stay in your name.</p>
     </details>
     <details>
       <summary>How is a co-host different from Kona vacation rental management?</summary>
-      <p>A traditional management company often lists your home under its own account and collects the rental income before paying you. As your co-host, Linda works inside your listing instead. Airbnb pays you directly, shares the agreed co-host fee automatically, and you can see every booking and payout in real time.</p>
+      <p>If you've been searching for <strong class="kw">Kona vacation rental management</strong> or <strong class="kw">Kona Airbnb management</strong>, it helps to know the difference. A traditional management company often lists your home under its own account and collects the rental income before paying you. As your <strong class="kw">Airbnb co-host in Kona</strong>, I work inside your listing instead. Airbnb pays you directly, shares my agreed co-host fee automatically, and you can see every booking and payout in real time.</p>
     </details>
     <details>
       <summary>What does Airbnb co-hosting in Kona cost?</summary>
-      <p>Linda's co-host fee is agreed with you upfront and paid automatically through Airbnb from each booking, so there are no separate invoices. On your complimentary call she'll walk you through the details and what your home could earn.</p>
+      <p>My co-host fee is agreed with you upfront and paid automatically through Airbnb from each booking, so there are no separate invoices. On your complimentary call I'll walk you through the details and what your home could earn.</p>
     </details>
     <details>
       <summary>I live on the mainland. Is that a problem?</summary>
-      <p>Not at all. Off-island owners are exactly who On Island Hosting is built for. Linda becomes your eyes and hands in Kona, from guest arrivals to vendor visits, and keeps you updated so you never have to wonder how your home is doing.</p>
+      <p>Not at all. Off-island owners are exactly who I built On Island Hosting for. I become your eyes and hands in Kona, from guest arrivals to vendor visits, and keep you updated so you never have to wonder how your home is doing.</p>
     </details>
     <details>
       <summary>Do you work with long-term rentals?</summary>
-      <p>No. On Island Hosting focuses only on short-term and vacation rentals, which lets Linda give each home and every guest her full attention.</p>
+      <p>No. I co-host short-term and vacation rentals only, which lets me give each home and every guest my full attention.</p>
     </details>
   </div>
 </section>
@@ -652,33 +718,39 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  // ── Form (Netlify Forms) ──
-  const form = document.getElementById('call-form');
-  function showSuccess() {
+  // ── Forms (Netlify Forms) — hero form and bottom form share one handler ──
+  function showSuccess(form) {
     form.hidden = true;
-    document.getElementById('form-success').hidden = false;
+    form.parentElement.querySelector('.form-success').hidden = false;
   }
-  if (new URLSearchParams(location.search).has('sent')) showSuccess();
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const btn = document.getElementById('form-submit-btn');
-    btn.textContent = 'Sending…';
-    btn.disabled = true;
-    try {
-      const res = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(new FormData(form)).toString(),
-      });
-      if (!res.ok) throw new Error(res.status);
-      track('generate_lead', { form_name: 'kona-call-request', property_area: form.propertyArea.value });
-      showSuccess();
-    } catch {
-      btn.textContent = 'Book My Free Call';
-      btn.disabled = false;
-      alert('Something went wrong. Please email Linda@OnIslandHosting.com directly.');
-    }
+  if (new URLSearchParams(location.search).has('sent')) {
+    showSuccess(document.querySelector('.call-form'));
+  }
+  document.querySelectorAll('.call-form').forEach((form) => {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('.form-submit');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      try {
+        const res = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(form)).toString(),
+        });
+        if (!res.ok) throw new Error(res.status);
+        track('generate_lead', {
+          form_name: 'kona-call-request',
+          form_placement: form.placement.value,
+          property_area: form.propertyArea.value,
+        });
+        showSuccess(form);
+      } catch {
+        btn.textContent = 'Book My Free Call';
+        btn.disabled = false;
+        alert('Something went wrong. Please email Linda@OnIslandHosting.com directly.');
+      }
+    });
   });
 </script>
 
