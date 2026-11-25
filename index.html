@@ -1478,6 +1478,7 @@
       color: rgba(247,245,240,0.3);
     }
   </style>
+  <script src="/tracking.js"></script>
 </head>
 
 <body>
@@ -2119,11 +2120,13 @@
     const body = new URLSearchParams(new FormData(form)).toString();
 
     try {
-      await fetch('/', {
+      const res = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body,
       });
+      if (!res.ok) throw new Error(res.status);
+      if (window.ohLead) window.ohLead({ form_name: 'contact', form_placement: 'home' });
       form.style.display = 'none';
       document.getElementById('form-success').style.display = 'block';
     } catch {

@@ -358,6 +358,7 @@
     .footer-col a:hover { color: rgba(247,245,240,0.9); }
     .footer-bottom { text-align: center; font-size: 0.74rem; color: rgba(247,245,240,0.3); }
   </style>
+  <script src="/tracking.js"></script>
 </head>
 
 <body>
@@ -746,7 +747,7 @@
           body: new URLSearchParams(new FormData(form)).toString(),
         });
         if (!res.ok) throw new Error(res.status);
-        track('generate_lead', {
+        (window.ohLead || function (p) { track('generate_lead', p); })({
           form_name: 'kona-call-request',
           form_placement: form.placement.value,
           property_area: form.propertyArea.value,
