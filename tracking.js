@@ -2,7 +2,7 @@
  * Paste the IDs from Linda's accounts below and deploy. While they are
  * empty, nothing loads from Google; lead events still go to window.dataLayer. */
 (function () {
-  var GA4_ID = '';          // Google Analytics 4 measurement ID, e.g. 'G-ABC123XYZ'
+  var GA4_ID = 'G-6650KHNMB0';          // Google Analytics 4 measurement ID, e.g. 'G-ABC123XYZ'
   var ADS_ID = 'AW-18107785330';          // Google Ads tag ID, e.g. 'AW-123456789'
   var ADS_LEAD_LABEL = '4c3ICOzEur8dEPLAu7pD';  // label of the "Assessment request" conversion, e.g. 'AbC-dEfGhIj'
 
